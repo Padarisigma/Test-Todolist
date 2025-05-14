@@ -41,7 +41,7 @@ function App() {
       <div className='grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-5  gap-[30px] w-[85%] m-auto py-[50px] '>
         {
           data?.slice(0,10).map((item: ITodo)=>{
-            return <div key={item.id} className='p-[15px] lg:h-[200px]  hover:shadow-lg flex flex-col justify-between  border-1 border-solid border-gray-400 rounded-[10px] transform hover:translate-y-[-10px] transition-all duration-200 ease-linear'>
+            return <div key={item.id} className='p-[15px] h-[150px] md:h-[150px] lg:h-[200px]  hover:shadow-lg flex flex-col justify-between  border-1 border-solid border-gray-400 rounded-[10px] transform hover:translate-y-[-10px] transition-all duration-200 ease-linear'>
               <div className='flex justify-between italic font-semibold tracking-[1px]'>
                  <p className={`${item.completed ? 'line-through' : ''} text-[16px] `} > {item.title}</p>
                  <input
